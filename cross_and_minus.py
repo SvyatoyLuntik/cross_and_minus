@@ -14,7 +14,7 @@ class MainApp(App):
         self.switch = True
 
     def clk(self, win):
-        self.title = f"Победил {win}"
+        self.title = f"Проиграл {win}"
         popup = ModalView(size_hint=(0.75, 0.5))
         victory_label = Label(text=f"Победил {win}", font_size=50)
         popup.add_widget(victory_label)
