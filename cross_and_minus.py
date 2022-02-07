@@ -14,7 +14,7 @@ class MainApp(App):
         self.switch = True
 
     def clk(self, win):
-        self.title = f"Проиграл {win}"
+        self.title = f"Победил {win}"
         popup = ModalView(size_hint=(0.75, 0.5))
         victory_label = Label(text=f"Победил {win}", font_size=50)
         popup.add_widget(victory_label)
@@ -63,10 +63,10 @@ class MainApp(App):
                 win_Y = int(MainApp.diagonal_win("O", index, z))
             index += 1
             if win_y == 5 or win_Y == 5:
-                self.clk("O")
+                self.clk("Х")
                 break
             elif win_x == 5 or win_X == 5:
-                self.clk("X")
+                self.clk("О")
                 break
         self.bot()
 
