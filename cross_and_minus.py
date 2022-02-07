@@ -72,7 +72,7 @@ class MainApp(App):
 
     def bot(self):
         while True:
-            x = random.randint(0, 100)
+            x = random.randint(0, 99)
             if self.buttons[x].text == "":
                 self.buttons[x].disabled = True
                 self.buttons[x].text = "O"
